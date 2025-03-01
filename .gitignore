@@ -1,0 +1,10 @@
+# Do not track DS_Store
+.DS_Store
+
+# Do not track design and preview files
+/design
+preview.jpg
+style-guide.md
+
+# Do not track README template
+README-template.md
