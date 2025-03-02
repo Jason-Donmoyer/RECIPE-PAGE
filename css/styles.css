@@ -3,7 +3,7 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
 
-/* STYLES */
+/* ROOT -- HTML -- VARIABLES -- TYPOGRAPHY */
 
 :root {
 
@@ -17,7 +17,7 @@
   --stone-150: hsl(30, 18%, 87%);
   --stone-100: hsl(30, 54%, 90%);
   --brown-800: hsl(14, 45%, 36%);
-  --white: hsl(0, 0, 100%);
+  --white: hsl(0, 0%, 100%);
 
   /* Spacing */
   --spacing-1600: 128px;
@@ -92,4 +92,115 @@ html {
   font-size: 1rem;
   font-weight: 700;
   line-height: 150%;
+}
+
+
+/*********** MAIN STYLES ***********/
+
+/* Body and main containers */
+body {
+  background-color: var(--stone-100);
+}
+
+.main-container {
+  /* height: 100vh; */
+  /* width: 100vw; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--white);
+}
+
+.main-img {
+  height: 10.6875rem;
+  align-self: stretch;
+  object-fit: cover;
+}
+
+.main-content-container {
+  display: flex;
+  padding: var(--spacing-500) var(--spacing-400);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-400);
+  align-self: stretch;
+}
+
+/* Header container */
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-300);
+  align-self: stretch;
+}
+
+.main-heading {
+  margin: 0px;
+  font-size: 2.25rem;
+  color: var(--stone-900);
+  align-self: stretch;
+}
+
+.header-copy {
+  margin: 0px;
+  color: var(--stone-600);
+  align-self: stretch;
+}
+
+/* Prep container */
+.prep-container {
+  display: flex;
+  padding: var(--spacing-300);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-200);
+  align-self: stretch;
+  border-radius: var(--spacing-150);
+  background-color: var(--rose-50);
+}
+
+.prep-container-heading {
+  margin: 0px;
+  color: var(--rose-800);
+  align-self: stretch;
+}
+
+.prep-list-container {
+  display: flex;
+  padding: 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-100);
+  align-self: stretch;
+  list-style: none;
+}
+
+.prep-list-item {
+  display: flex;
+  padding-left: var(--spacing-100);
+  align-items: center;
+  gap: var(--spacing-200);
+  align-self: stretch;
+  flex: 1 0 0;
+  color: var(--stone-600);
+}
+
+.list-dot-container {
+  display: flex;
+  width: var(--spacing-200, 16px);
+  align-items: center;
+  gap: var(--spacing-100, 8px);
+  align-self: stretch;
+}
+
+.list-dot {
+  background-image: url(../assets/images/dot.svg);
+  height: 0.25rem;
+  width: 0.25rem;
+  flex-shrink: 0;
+}
+
+.prep-list-heading {
+  display: contents;
 }
