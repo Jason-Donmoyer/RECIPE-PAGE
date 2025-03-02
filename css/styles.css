@@ -148,27 +148,18 @@ body {
   align-self: stretch;
 }
 
-/* Prep container */
-.prep-container {
-  display: flex;
-  padding: var(--spacing-300);
-  flex-direction: column;
-  align-items: flex-start;
-  gap: var(--spacing-200);
-  align-self: stretch;
-  border-radius: var(--spacing-150);
-  background-color: var(--rose-50);
-}
-
-.prep-container-heading {
+/* HR divider */
+.divider {
+  border: 1px solid var(--stone-150);
+  width: 100%;
   margin: 0px;
-  color: var(--rose-800);
-  align-self: stretch;
 }
 
-.prep-list-container {
+/* UL List Styles */
+.list-container {
   display: flex;
   padding: 0px;
+  margin: 0px;
   flex-direction: column;
   align-items: flex-start;
   gap: var(--spacing-100);
@@ -176,7 +167,7 @@ body {
   list-style: none;
 }
 
-.prep-list-item {
+.list-item {
   display: flex;
   padding-left: var(--spacing-100);
   align-items: center;
@@ -201,6 +192,54 @@ body {
   flex-shrink: 0;
 }
 
+/* Prep container */
+.prep-container {
+  display: flex;
+  padding: var(--spacing-300);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-200);
+  align-self: stretch;
+  border-radius: var(--spacing-150);
+  background-color: var(--rose-50);
+}
+
+.prep-container-heading {
+  margin: 0px;
+  color: var(--rose-800);
+  align-self: stretch;
+}
+
 .prep-list-heading {
   display: contents;
+}
+
+/* Ingredients container */
+.ingredients-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-300, 24px);
+  align-self: stretch;
+}
+
+.ingredients-container-heading {
+  margin: 0px;
+  color: var(--brown-800);
+  align-self: stretch;
+}
+
+/* Instructions container */
+.instructions-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-300);
+  align-self: stretch;
+}
+
+.instructions-container-heading {
+  margin: 0px;
+  color: var(--brown-800);
+  align-self: stretch;
 }
