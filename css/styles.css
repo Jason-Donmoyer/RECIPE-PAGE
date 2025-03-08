@@ -113,8 +113,9 @@ body {
 
 .main-img {
   height: 10.6875rem;
+  background: lightgray 50% / cover no-repeat;
   align-self: stretch;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 .main-content-container {
@@ -281,6 +282,8 @@ body {
   display: block; 
 } */
 
+
+/* Nutrition Table */
 .nutrition-table {
   width: 100%;
   display: flex;
@@ -317,4 +320,55 @@ body {
 
 .nutrition-data {
   color: var(--brown-800);
+}
+
+
+/**********************/
+   /* MEDIA QUERIES */
+/**********************/
+
+/* Tablet 768px (ipad mini) */
+
+@media screen and (min-width: 768px) {
+
+  body {
+    background-color: var(--stone-100);
+    padding: var(--spacing-1600) var(--spacing-600);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-100);
+  }
+
+  .main-container {
+    border-radius: var(--spacing-300);
+    max-width: 38.5rem;
+    padding: var(--spacing-500);
+    gap: var(--spacing-500);
+    flex: 1 0 0;
+  }
+
+  .main-img {
+    height: 18.75rem;
+    border-radius: var(--spacing-150);
+  }
+
+  .main-content-container {
+    padding: 0px;
+  }
+
+  .main-heading {
+    font-size: 2.5rem;
+  }
+
+}
+
+/* Desktop 1200px */
+
+@media screen and (min-width: 1200px) {
+  
+  .main-container {
+    max-width: 46rem;
+  }
+
 }
