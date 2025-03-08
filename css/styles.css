@@ -243,3 +243,78 @@ body {
   color: var(--brown-800);
   align-self: stretch;
 }
+
+.list-number-container {
+  display: flex;
+  align-self: flex-start;
+  color: var(--brown-800);
+}
+
+.instructions-list-heading {
+  display: contents;
+}
+
+/* Nutrition container */
+.nutrition-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-300);
+  align-self: stretch;
+  width: 100%;
+}
+
+.nutrition-container-heading {
+  margin: 0px;
+  color: var(--brown-800);
+  align-self: stretch;
+}
+
+.nutrition-table-copy {
+  margin: 0px;
+  color: var(--stone-600);
+}
+
+/* caption {
+  padding-bottom: var(--spacing-300);
+  margin: 0px;
+  display: block; 
+} */
+
+.nutrition-table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-150);
+}
+
+.nutrition-table-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-150);
+  align-self: stretch;
+}
+
+.nutrition-td-row {
+  width: 100%;
+  display: flex;
+  padding: 0px var(--spacing-400);
+  align-items: center;
+  gap: var(--spacing-200);
+}
+
+.nutrition-head, .nutrition-data {
+  text-align: left;
+  width: 115.5px;
+  flex: 1 0 0;
+}
+
+.nutrition-head {
+  color: var(--stone-600);
+}
+
+.nutrition-data {
+  color: var(--brown-800);
+}
